@@ -1,14 +1,14 @@
-# ==============================================================================
-# Semantic Metadata Schema for Text-to-SQL Agent
-# Target Entity: budgets / v_monthly_budgets
-# ==============================================================================
+==============================================================================
+Semantic Metadata Schema for Text-to-SQL Agent
+Target Entity: budgets / v_monthly_budgets
+==============================================================================
 
 table_name: budgets
 view_name: v_monthly_budgets
 domain: "Sales Planning & Financial Budgeting"
 description: "حاوی پیش‌بینی و بودجه فروش مقداری و ریالی کالاها/محصولات به تفکیک سال و ماه"
 
-# مترادف‌های بیزینسی جهت Table Retrieval و Routing
+ مترادف‌های بیزینسی جهت Table Retrieval و Routing
 synonyms:
   - "بودجه فروش"
   - "تارگت کالاها"
@@ -17,7 +17,7 @@ synonyms:
   - "اهداف ریالی و مقداری"
   - "هدف‌گذاری ماهانه"
 
-# کلیدها و ایندکس‌ها
+ کلیدها و ایندکس‌ها
 primary_keys: ["id"]
 composite_business_keys: ["company_id", "sku_id", "year", "month_num"]
 
